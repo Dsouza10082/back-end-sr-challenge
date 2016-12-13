@@ -19,6 +19,8 @@ module.exports = function(app){
           var json = req.body;
           var service = json.service;
           
+          _clearResult(result);
+
           var result = Result;
 
           result.id = uuid.v1();
@@ -77,6 +79,10 @@ module.exports = function(app){
                     res.send(result);
                     break;
                  }
+             }else{
+               result.data = {};
+               result.message = 'Comando inválido.'
+               res.send(result);
              } 
           });   
         },
@@ -191,7 +197,7 @@ module.exports = function(app){
         if(result.message){
           result.message = '';
         }
-    
+
         if(!data.currency){
           result.message = 'Campo currency é obrigatório para usar este serviço.';
         }
@@ -218,6 +224,10 @@ module.exports = function(app){
       }); 
       return deferred.promise;
     };
+
+    function _clearResult(result){
+       result = {};
+    }
 
     return requestCtrl;
 };

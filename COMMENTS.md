@@ -21,6 +21,9 @@ $ npm install
 ## Chave para retornar os dados do banco.
 * wDVSCp1IgD0CjsnzEzDDuMqK
 
+## Url de requisição para POST (local)
+ * http://localhost:9005/v1/request/post
+
 ##Serviço convert: converte a quantidade desejada de Bitcoin para o currency escolhido.
 ```json
 {
@@ -56,7 +59,7 @@ $ npm install
 ```json
 {
   "service":"requestDatabaseData",
-  "key":"wDVSCp1IgD0CjsnzEzDDuMqK"
+  "key":"<key>"
 }
 ```
 
@@ -64,7 +67,7 @@ $ npm install
 ```json
 {
   "service":"responseDatabaseData",
-  "key":"wDVSCp1IgD0CjsnzEzDDuMqK"
+  "key":"<key>"
 }
 ```
 
@@ -98,3 +101,5 @@ $ node spotService
 ```bash
 $ npm test
 ```
+## Serviço para listar os comandos disponíveis
+* http://localhost:9005/v1/request/help
