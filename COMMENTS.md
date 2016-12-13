@@ -103,3 +103,6 @@ $ npm test
 ```
 ## Serviço para listar os comandos disponíveis
 * http://localhost:9005/v1/request/help
+
+## Currency list
+https://pt.wikipedia.org/wiki/ISO_4217
