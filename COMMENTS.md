@@ -2,10 +2,16 @@
 
 # Spot Service
 
-## Instalação
+##Instalação
 
 ```bash
 $ npm install
+```
+
+##Para iniciar o sistema:
+
+```bash
+$ node spotService
 ```
 
 ## Características
@@ -75,12 +81,6 @@ $ npm install
   "service":"responseDatabaseData",
   "key":"<key>"
 }
-```
-
-##Para iniciar o sistema:
-
-```bash
-$ node spotService
 ```
 
 ##Bibliotecas utilizadas
