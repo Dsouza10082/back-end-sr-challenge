@@ -21,7 +21,7 @@ $ npm install
 ## Chave para retornar os dados do banco.
 * wDVSCp1IgD0CjsnzEzDDuMqK
 
-#Serviço convert: converte a quantidade desejada de Bitcoin para o currency escolhido.
+##Serviço convert: converte a quantidade desejada de Bitcoin para o currency escolhido.
 ```json
 {
   "service":"convert",
@@ -32,7 +32,7 @@ $ npm install
 }
 ```
 
-#Serviço average: retorna o melhor preço, retornando para o currency.
+##Serviço average: retorna o melhor preço, retornando para o currency.
 ```json
 {
   "service":"average",
@@ -42,7 +42,7 @@ $ npm install
 }
 ```
 
-#Serviço rates: retorna a lista de valores em geral para aquele currency.
+##Serviço rates: retorna a lista de valores em geral para aquele currency.
 ```json
 {
   "service":"rates",
@@ -52,7 +52,7 @@ $ npm install
 }
 ```
 
-#Serviço requestDatabaseData: retorna todos os requests da base de dados.
+##Serviço requestDatabaseData: retorna todos os requests da base de dados.
 ```json
 {
   "service":"requestDatabaseData",
@@ -60,7 +60,7 @@ $ npm install
 }
 ```
 
-#Serviço responseDatabaseData: retorna todos os responses da base de dados.
+##Serviço responseDatabaseData: retorna todos os responses da base de dados.
 ```json
 {
   "service":"responseDatabaseData",
@@ -68,13 +68,13 @@ $ npm install
 }
 ```
 
-### Para iniciar o sistema:
+##Para iniciar o sistema:
 
 ```bash
 $ node spotService
 ```
 
-### Bibliotecas utilizadas
+##Bibliotecas utilizadas
 
 * cors -- Utilizado para evitar o problema de CROSS DOMAIN, somente para a prova, não aconselhado para produção.
 * ejs -- Engine de template, caso necessário.
