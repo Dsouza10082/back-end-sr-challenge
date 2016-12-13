@@ -10,9 +10,9 @@ $ npm install
 
 ## Características
 
-  * Retorna o valor correspondente ao total informado de Bitcoins.
-  * Retorna a origem mais barata do Bitcoin exibindo na moeda fornecida.
-  * Lista todas as origens e seus respectivos valores utilizando a moeda desejada.
+  * Retorna o valor correspondente ao total informado de Bitcoins - comando convert.
+  * Retorna a origem mais barata do Bitcoin exibindo na moeda fornecida - comando average.
+  * Lista todas as origens e seus respectivos valores utilizando a moeda desejada - comando rates.
   * Lista todos os requests efetuados
   * Lista todos os responses recebidos
   
@@ -24,13 +24,19 @@ $ npm install
 ## Url de requisição para POST (local)
  * http://localhost:9005/v1/request/post
 
+## Url para verificar o status do sistema (local)
+ * http://localhost:9005/ping 
+
+## Url para acessar a lista de comandos disponíveis
+* http://localhost:9005/help
+
 ##Serviço convert: converte a quantidade desejada de Bitcoin para o currency escolhido.
 ```json
 {
   "service":"convert",
   "data":{
     "qtd":"2",
-	"currency":"USD"
+	  "currency":"USD"
  }
 }
 ```
@@ -39,8 +45,8 @@ $ npm install
 ```json
 {
   "service":"average",
-  "data":{
-	"currency":"USD"
+    "data":{
+	  "currency":"USD"
  }
 }
 ```
@@ -49,8 +55,8 @@ $ npm install
 ```json
 {
   "service":"rates",
-  "data":{
-	"currency":"USD"
+    "data":{
+	  "currency":"USD"
  }
 }
 ```
@@ -101,8 +107,6 @@ $ node spotService
 ```bash
 $ npm test
 ```
-## Serviço para listar os comandos disponíveis
-* http://localhost:9005/v1/request/help
 
 ## Currency list
 https://pt.wikipedia.org/wiki/ISO_4217
