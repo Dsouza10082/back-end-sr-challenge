@@ -1,0 +1,39 @@
+
+//Converte a quantidade desejada de Bitcoin para o currency escolhido
+{
+  "service":"convert",
+  "data":{
+    "qtd":"2",
+	"currency":"USD"
+ }
+}
+
+//Retorna o melhor preço, retornando pelo currency
+{
+  "service":"average",
+  "data":{
+	"currency":"USD"
+ }
+}
+
+//Retorna a lista de valores em geral para aquele currency
+{
+  "service":"rates",
+  "data":{
+	"currency":"USD"
+ }
+}
+
+//Retorna todos os requests da base de dados
+{
+  "service":"requestDatabaseData",
+  "key":"wDVSCp1IgD0CjsnzEzDDuMqK"
+}
+
+
+// Retorna todos os responses da base de dados
+{
+  "service":"responseDatabaseData",
+  "key":"wDVSCp1IgD0CjsnzEzDDuMqK"
+}
+
